@@ -8,7 +8,9 @@ class CreateCharacterCards < ActiveRecord::Migration
       t.integer :bv
       t.string  :support
       t.boolean :can_use_bv
-      t.boolean :can_use_special
+      t.boolean :has_special
+      t.boolean :can_use_active
+      t.boolean :can_use_passive
       t.boolean :can_gain_hp
       t.boolean :targetable_by_own_special
       t.boolean :targetable_by_own_support
