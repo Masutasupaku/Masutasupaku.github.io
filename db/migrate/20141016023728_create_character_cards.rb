@@ -8,7 +8,6 @@ class CreateCharacterCards < ActiveRecord::Migration
       t.integer :bv
       t.string  :support
       t.boolean :can_use_bv
-      t.boolean :has_special
       t.boolean :can_use_active
       t.boolean :can_use_passive
       t.boolean :can_gain_hp
@@ -18,6 +17,7 @@ class CreateCharacterCards < ActiveRecord::Migration
       t.boolean :targetable_by_opp_special
       t.boolean :targetable_by_opp_support
       t.boolean :targetable_by_opp_event
+      t.string  :equipped_by
       t.references :card
 
       t.timestamps

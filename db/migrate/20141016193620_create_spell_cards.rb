@@ -35,7 +35,8 @@ class CreateSpellCards < ActiveRecord::Migration
       t.boolean :targetable_by_opp_special
       t.boolean :targetable_by_opp_support
       t.boolean :targetable_by_opp_event
-      t.string :spell_type
+      t.string  :equipped_by
+      t.string  :spell_type
       t.references :card
 
       t.timestamps
