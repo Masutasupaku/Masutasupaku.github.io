@@ -18,7 +18,6 @@ class CreateCharacterCards < ActiveRecord::Migration
       t.boolean :targetable_by_opp_support
       t.boolean :targetable_by_opp_event
       t.string  :equipped_by
-      t.references :card
 
       t.timestamps
     end

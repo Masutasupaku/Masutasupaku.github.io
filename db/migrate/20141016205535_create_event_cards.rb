@@ -18,7 +18,6 @@ class CreateEventCards < ActiveRecord::Migration
 		t.boolean :extra_cost_use_hand_card
 		t.boolean :extra_cost_use_reserve_active
 		t.string  :phase
-		t.references :card
 		
 		t.timestamps
 		end
