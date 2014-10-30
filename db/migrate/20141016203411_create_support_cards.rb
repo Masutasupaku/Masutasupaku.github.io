@@ -10,6 +10,7 @@ class CreateSupportCards < ActiveRecord::Migration
 			t.string  :require_phase
 			t.string  :require_side
 			t.boolean :once_per_turn
+			t.boolean :can_equip
 			t.boolean :has_extra_cost_equip
 			t.integer :extra_cost_equip_hp
 			t.integer :extra_cost_equip_sp
@@ -21,6 +22,7 @@ class CreateSupportCards < ActiveRecord::Migration
 			t.boolean :targetable_by_opp_event
 			t.string  :equipped_to
 			t.string  :support_type
+			t.string  :support_class
 
 			t.timestamps
 		end
