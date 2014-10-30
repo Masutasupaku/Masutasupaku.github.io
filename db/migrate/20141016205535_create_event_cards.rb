@@ -10,6 +10,7 @@ class CreateEventCards < ActiveRecord::Migration
 		t.string  :require_phase
 		t.string  :require_side
 		t.boolean :once_per_turn
+		t.boolean :can_use
 		t.boolean :has_extra_cost_use
 		t.boolean :extra_cost_use_hp
 		t.boolean :extra_cost_use_sp
